@@ -12,4 +12,33 @@
 
 * Executa tarefas em paralelo, porem pode ser executado em serie também;
 
+* o gulp é executado no terminal usando o comando (gulp), porém deve ser executado no diretório que contenha o arquivo gulpfile.js;
+
+* tasks em serie executam uma de cada vez;
+
+* tasks em paralelo iniciam todas juntas;
+
+*Exemplo: para executar em serie basta trocar o parallel para series, podem ser feitos chamadas parallel dentro de series;
+module.exports.default = parallel(
+    antes1,
+    antes2,
+    copiar,
+    fim,
+)
+
+* Pode-se copiar arquivos de um diretório para outro:
+const copy = cb => {
+    gulp.src('pastaA/**/*.txt') //copia todos as arquivos .txt  de todas as pastas em pastaA
+        .pipe(gulp.dest('pastaB')) //pasta de destino, cria automaticamente caso não exista
+    return cb()
+}
+
+module.exports.default = parallel(
+    antes,
+    copy,
+    fim,
+)
+
+pode-se encadear diversos .pipe, para realizar alterações nos arquivos originais;
+
 
