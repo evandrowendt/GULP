@@ -41,4 +41,27 @@ module.exports.default = parallel(
 
 pode-se encadear diversos .pipe, para realizar alterações nos arquivos originais;
 
+* uglify serve para minificar os arquivos, tirando espaços em branco;
 
+* babel serve para transformar JS muito atual em versão que tem maior suporte dos browser;
+
+* concat justa arquivos em um só;
+
+ *EXEMPLO:
+ const { series, parallel } = require('gulp');
+const gulp = require('gulp');
+const concat = require('gulp-concat');
+const uglify = require('gulp-uglify');
+const babel = require('gulp-babel');
+
+function transformacaoJS(cb){
+    return gulp.src('src/**/*.js')
+            .pipe(babel({ //transpila patra versão de JS mais suportada pelos browsers
+                comments: false, //os comentários dos arquivos não serão copiados
+                presets: ["env"]
+            }))
+            .pipe(uglify()) //minifica os arquivos
+            .on('error', err => console.log(err))
+            .pipe(concat('script.min.js')) //concatena
+            .pipe(gulp.dest('build'))
+}
