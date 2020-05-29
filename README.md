@@ -67,3 +67,5 @@ function transformacaoJS(cb){
 }
 
 * GULP pode transpilar codigo TypeScript em JS, ver diretório typeScript;
+
+*Gulp tambem pode ser usado para trasnformar arquivo SASS e SCSS em arquivo CSS nativo, basta importar (gulp-sass)
