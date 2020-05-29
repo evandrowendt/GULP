@@ -65,3 +65,5 @@ function transformacaoJS(cb){
             .pipe(concat('script.min.js')) //concatena
             .pipe(gulp.dest('build'))
 }
+
+* GULP pode transpilar codigo TypeScript em JS, ver diretório typeScript;
