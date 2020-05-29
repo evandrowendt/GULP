@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,MAAM,EAAE,GAAG;EACX,SAAS,EAAE,IAAI;EACf,aAAa,EAAE,GAAG;EAClB,WAAW,EAAE,GAAG;EAChB,OAAO,EAAE,SAAS;EAClB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "botoes.scss"
+    ],
+    "names": [],
+    "file": "botoes.css"
+}

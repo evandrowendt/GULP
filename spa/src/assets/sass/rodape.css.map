@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,AAAA,OAAO,CAAC;EACV,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,QAAQ;EACzB,OAAO,EAAE,MAAM;EACf,gBAAgB,EAAE,IAAI;EACtB,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC,CAAC,kBAAkB,EAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,CAAC,CAAC,mBAAmB;CAChF",
+    "sources": [
+        "rodape.scss"
+    ],
+    "names": [],
+    "file": "rodape.css"
+}

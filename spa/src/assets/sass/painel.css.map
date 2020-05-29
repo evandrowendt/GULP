@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EAEJ,OAAO,EAAE,IAAI;EACb,gBAAgB,EAAE,IAAI;EACtB,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,mBAAmB,EAAE,CAAC,CAAC,GAAG,CAAC,GAAG,CAAC,mBAAmB;CAC5E;;AAED,AAAA,OAAO,CAAC,EAAE,CAAC;EACP,WAAW,EAAE,GAAG;EAChB,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "painel.scss"
+    ],
+    "names": [],
+    "file": "painel.css"
+}
