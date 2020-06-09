@@ -1,4 +1,4 @@
-#GULP
+# GULP
 
 * Em projeto real qundo o navegador vai renderizar a pagina, ele faz centenas de request para o servidor, trazendo cada arquivo individulmente, após trazer o index.html;
 
