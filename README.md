@@ -48,7 +48,8 @@ pode-se encadear diversos .pipe, para realizar alterações nos arquivos origina
 * concat justa arquivos em um só;
 
  *EXEMPLO:
- '''
+ 
+ ```
  const { series, parallel } = require('gulp');
 const gulp = require('gulp');
 const concat = require('gulp-concat');
@@ -66,7 +67,8 @@ function transformacaoJS(cb){
             .pipe(concat('script.min.js')) //concatena
             .pipe(gulp.dest('build'))
 }
-'''
+```
+
 * GULP pode transpilar codigo TypeScript em JS, ver diretório typeScript;
 
 *Gulp tambem pode ser usado para trasnformar arquivo SASS e SCSS em arquivo CSS nativo, basta importar (gulp-sass)
